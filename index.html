@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bartosz Szerląg</title>
+    <meta name="description" content="Bartosz Szerląg - Software Test Engineer">
+    <meta name="author" content="Bartosz Szerłag">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="fontello.css" type="text/css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function ($) {
+            $.scrollTo(0);
+            $('#menu-1').click(function () {
+                $.scrollTo($('#about-me-title'), 500);
+            });
+            $('#menu-2').click(function () {
+                $.scrollTo($('#experience-title'), 500);
+            });
+            $('#menu-3').click(function () {
+                $.scrollTo($('#courses-title'), 500);
+            });
+            $('#menu-4').click(function () {
+                $.scrollTo($('#education-title'), 500);
+            });
+            $('#menu-5').click(function () {
+                $.scrollTo($('#contact-title'), 500);
+            });
+            $('.scrollup').click(function () {
+                $.scrollTo($('body'), 500);
+            })
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) $('.scrollup').fadeIn();
+            else $('.scrollup').fadeOut()
+        })
+    </script>
+</head>
+<body>
+<header>
+    <section>
+        <div><img id="logo" src="img/logo.png" alt="BS"/></div>
+        <h1>Bartosz Szerląg</h1>
+        <p>Software Test Engineer</p>
+    </section>
+    <section id='quote'>
+        “The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.” <br>
+        – Winston Churchill
+    </section>
+    <nav class="nav">
+        <ul class="menu">
+            <li><a id="menu-1" href="#">About me</a></li>
+            <li><a id="menu-2" href="#">Experience</a></li>
+            <li><a id="menu-3" href="#">Courses</a></li>
+            <li><a id="menu-4" href="#">Education</a></li>
+            <li><a id="menu-5" href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <article id="info">
+        <a href="#" class="scrollup"></a>
+        <section class="part">
+            <div id="about-me">
+                <h2 id="about-me-title">About me</h2>
+                <p>Hi! I am a charismatic person who always looks at the world in bright colours. I am a typical team
+                    player so work with people is that what I need. When I have a break from bug hunting I like to learn
+                    new things related with programing and testing . I am big fan of sport (specially football) and
+                    e-sport
+                    so you can meet me on a gym and online playing video games. I also like talk about good tv
+                    series.</p>
+            </div>
+        </section>
+        <section class="part">
+            <div id="experience">
+                <h2 id="experience-title">Experience</h2>
+                <div class="cmp-title">
+                    Allegro (2018 - now)<br>
+                </div>
+                <div class="details">
+                    <b>Software Test Engineer (apr 2020 - now)</b><br>
+                    Tech Stack: Groovy / RestAssured / Geb / Spock / Gatling<br>
+                    Duties: automation backend tests / automation performance
+                    tests / simple bugfixes / code review
+                </div>
+                <div class="details">
+                    <b>Junior Software Test Engineer (may 2018 - mar 2020)</b><br>
+                    Tech Stack: Java / Selenium / JUnit / Git / wrk <br>
+                    Duties: automation frontend tests /
+                    basic performance tests / applications deployment
+                </div>
+                <div class="details">
+                    <b>Software Tester - Internship (mar 2018 - apr 2018)</b><br>
+                    Tech Stack: Jira / Postman / DevTools / Kibana<br>
+                    Duties: manual testing / writing test cases / reporting bugs
+                </div>
+            </div>
+        </section>
+        <section class="part">
+            <div id="courses">
+                <h2 id="courses-title">Courses</h2>
+                <div class="title">ISTQB Foundation Level (2019)</div>
+            </div>
+        </section>
+        <section class="part">
+            <div id="education">
+                <h2 id="education-title">Education</h2>
+                <div class="school">
+                    <div class="title">
+                        Akademia Finansów i Biznesu Vistula (2017 - 2018)
+                    </div>
+                    <div class="details">
+                        <b>Software Testing</b>, Postgraduate studies
+                    </div>
+                </div>
+                <div class="school">
+                    <div class="title">
+                        Akademia Sztuki Wojennej (2015 - 2017)
+                    </div>
+                    <div class="details">
+                        <b>National Security</b>, Master's degree
+                    </div>
+                </div>
+                <div class="school">
+                    <div class="title">
+                        Wyższa Szkoła Prawa i Administracji (2011 - 2014)
+                    </div>
+                    <div class="details">
+                        <b>Internal Security</b>, Licentiate degree
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="part">
+            <div id="contact">
+                <h2 id="contact-title">Contact</h2>
+                <div id="contact-message">
+                    If you want to contact with me just send an email or use form below.<br>
+                    <div id="my-mail">
+                        <i class="icon-mail-alt"></i> bartosz.szerlag@gmail.com
+                    </div>
+                </div>
+                <div class="form">
+                    <form action="https://formspree.io/xbjavnzy" method="POST">
+                        <div id="form-mail">
+                            <label>
+                                Your email:<br>
+                                <input type="text" name="mail" required title="Email required">
+                            </label>
+                        </div>
+                        <div id="form-message">
+                            <label>
+                                Message:<br>
+                                <textarea name="message" required title="Message required"></textarea><br>
+                            </label>
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </article>
+</main>
+<footer>
+    Created by &copy; Bartosz Szerląg
+    <a href="https://github.com/bartekszerlag" class="sociallink" target="_blank">
+        <i class="icon-github-circled"></i></a>
+    <a href="https://www.linkedin.com/in/bartosz-szerl%C4%85g-a02908149" class="sociallink" target="_blank">
+        <i class="icon-linkedin-squared"></i></a>
+</footer>
+</body>
+</html>
