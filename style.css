@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 body {
-    background-image: url("img/subtle_dots.png");
+    background-color: white;
     font-size: 22px;
     line-height: 2em;
     font-family: 'Quicksand', sans-serif;
@@ -14,7 +14,7 @@ main {
 
 header {
     background-size: cover;
-    background-image: url("img/bck-0.jpeg");
+    background-image: url("img/banner.jpeg");
     background-position: center;
     text-transform: uppercase;
     text-align: center;
@@ -99,11 +99,11 @@ nav {
 }
 
 .title {
-    color: #008b8b
+    color: #0099ff
 }
 
 .cmp-title {
-    color: #008b8b;
+    color: #0099ff;
     margin-bottom: 20px;
 }
 
