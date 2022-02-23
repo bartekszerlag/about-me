@@ -85,6 +85,9 @@ section {
 #about-me > img{
     float: left;
     margin-right: 50px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
 
 }
 
